@@ -1,5 +1,6 @@
 # Bluemix Data cache gem
 
+Using Bluemix Data cache service from Ruby app.
 
 
 ## Installation
@@ -19,6 +20,23 @@ Or install it yourself as:
     $ gem install bluemix_datacache
 
 ## Usage
+
+```ruby
+require 'bluemix_datacache'
+
+# Create client with map name
+map = "SAMPLE.LUT"
+cache = BluemixDatacache::Client(map)
+
+# Insert data with key, value and content_type
+cache.insert("testkey", "testvalue", "application/json")
+
+# Search data with key
+cache.select("testkey")
+
+# Delete data with key
+cache.delete("testkey")
+```
 
 
 
