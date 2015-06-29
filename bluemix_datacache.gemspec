@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "bluemix_datacache"
   spec.version       = BluemixDatacache::VERSION
   spec.authors       = ["Yusuke Mukai"]
-  spec.email         = ["opposite0302@gmail.com"]
+  spec.email         = [""]
 
   spec.summary       = "Bluemix Data cache plugin"
   spec.description   = "Using Bluemix Data cache service from ruby."
